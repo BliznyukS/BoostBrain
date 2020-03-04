@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 @EntityScan
 public class User {
 
+
     @Id
     private Long id;
     private String firstName;
