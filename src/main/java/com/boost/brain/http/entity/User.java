@@ -1,11 +1,10 @@
 package com.boost.brain.http.entity;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 
-@EntityScan
+@Entity
 public class User {
-
 
     @Id
     private Long id;
@@ -44,4 +43,5 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+ */
 }
