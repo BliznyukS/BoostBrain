@@ -1,16 +1,22 @@
 package com.boost.brain.http.entity;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-//import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class User {
 
     @Id
+    @GeneratedValue
     private Long id;
     private String firstName;
     private int age;
     private String email;
+
+    public User(String firstName) {
+        this.firstName = firstName;
+    }
 
     public Long getId() {
         return id;
@@ -43,5 +49,4 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
- */
 }
